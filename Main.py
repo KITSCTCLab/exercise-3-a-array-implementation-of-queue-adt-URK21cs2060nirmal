@@ -1,4 +1,4 @@
-class Solutioclass Solution:
+class Solution:
     """This class implements linear queue.
       Attributes:
           stack: A list which maintains the content of stack.
@@ -22,7 +22,7 @@ class Solutioclass Solution:
         self.rear = -1
         self.front = -1
 
-    def is__stack__empty(self):
+    def is_stack_empty(self):
         """
         Check whether the stack is empty.
         Returns:
@@ -34,7 +34,7 @@ class Solutioclass Solution:
         else:
             return False
 
-    def is__queue__empty(self):
+    def is_queue_empty(self):
         """
         Check whether the queue is empty.
         Returns:
@@ -46,7 +46,7 @@ class Solutioclass Solution:
         else:
             return False
 
-    def is__stack__full(self):
+    def is_stack_full(self):
         """
         Check whether the stack is full.
         Returns:
@@ -58,7 +58,7 @@ class Solutioclass Solution:
         else:
             return False
 
-    def is__queue__full(self):
+    def is_queue_full(self):
         """
         Check whether the queue is full.
         Returns:
@@ -70,7 +70,7 @@ class Solutioclass Solution:
         else:
             return False
 
-    def push__character(self, character):
+    def push_character(self, character):
         """
         Push the character to stack, if stack is not full.
         Arguments:
@@ -81,7 +81,7 @@ class Solutioclass Solution:
             self.stack.append(character)
             self.top += 1
                     
-    def enqueue__character(self, character):
+    def enqueue_character(self, character):
         """
         Enqueue the character to queue, if queue is not full.
         Arguments:
@@ -94,7 +94,7 @@ class Solutioclass Solution:
             if self.front == -1:
                 self.front += 1
 
-    def pop__character(self):
+    def pop_character(self):
         """
         Do pop operation if the stack is not empty.
         Returns:
@@ -106,7 +106,7 @@ class Solutioclass Solution:
             self.top -= 1
             return data
 
-    def dequeue__character(self):
+    def dequeue_character(self):
         """
         Do dequeue operation if the queue is not empty.
         Returns:
