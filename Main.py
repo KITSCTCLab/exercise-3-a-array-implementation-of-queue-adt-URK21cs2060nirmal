@@ -10,7 +10,7 @@ class Solutioclass Solution:
       """
 
     # Write your code here
-    def _init_(self, size):
+    def __init__(self, size):
         """Inits Solution with stack, queue, size, top, front and rear.
         Arguments:
           size: An integer to set the size of stack and queue.
@@ -22,7 +22,7 @@ class Solutioclass Solution:
         self.rear = -1
         self.front = -1
 
-    def is_stack_empty(self):
+    def is__stack__empty(self):
         """
         Check whether the stack is empty.
         Returns:
@@ -34,7 +34,7 @@ class Solutioclass Solution:
         else:
             return False
 
-    def is_queue_empty(self):
+    def is__queue__empty(self):
         """
         Check whether the queue is empty.
         Returns:
@@ -46,7 +46,7 @@ class Solutioclass Solution:
         else:
             return False
 
-    def is_stack_full(self):
+    def is__stack__full(self):
         """
         Check whether the stack is full.
         Returns:
@@ -58,7 +58,7 @@ class Solutioclass Solution:
         else:
             return False
 
-    def is_queue_full(self):
+    def is__queue__full(self):
         """
         Check whether the queue is full.
         Returns:
@@ -70,7 +70,7 @@ class Solutioclass Solution:
         else:
             return False
 
-    def push_character(self, character):
+    def push__character(self, character):
         """
         Push the character to stack, if stack is not full.
         Arguments:
@@ -81,7 +81,7 @@ class Solutioclass Solution:
             self.stack.append(character)
             self.top += 1
                     
-    def enqueue_character(self, character):
+    def enqueue__character(self, character):
         """
         Enqueue the character to queue, if queue is not full.
         Arguments:
@@ -94,7 +94,7 @@ class Solutioclass Solution:
             if self.front == -1:
                 self.front += 1
 
-    def pop_character(self):
+    def pop__character(self):
         """
         Do pop operation if the stack is not empty.
         Returns:
@@ -106,7 +106,7 @@ class Solutioclass Solution:
             self.top -= 1
             return data
 
-    def dequeue_character(self):
+    def dequeue__character(self):
         """
         Do dequeue operation if the queue is not empty.
         Returns:
